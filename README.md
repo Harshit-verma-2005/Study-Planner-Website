@@ -74,36 +74,26 @@ Explore how this platform helps you achieve your study goals.
 ---
 
 Database Import Instructions
-markdown
-Copy code
 ## 🛠️ Setup Instructions
 
 1. Clone the repository:
-   ```bash
-   git clone https://github.com/yourusername/study-planner.git
-Navigate to the project directory:
-
-bash
-Copy code
-cd study-planner
-Import the database into MySQL:
+   git clone https://github.com/harshit-verma-2005/study-planner.git
+   
+2. Import the database into MySQL:
 
 Open phpMyAdmin.
 Create a new database (e.g., study_planner_db).
 Import the database.sql file located in the project root.
-Start your local server (e.g., XAMPP or WAMP).
 
-Open the project in your browser:
+3. Start your local server (e.g., XAMPP or WAMP).
 
-perl
-Copy code
-http://localhost/study-planner
+4. Open the project in your browser:
+     ->  http://localhost/study-planner
+
 🌟 Example Credentials (for testing)
 Role	Username	Password
 Admin	admin	admin123
 User	testuser	test123
-yaml
-Copy code
 
 ---
 
@@ -112,12 +102,14 @@ Copy code
 
 Thanks to all the contributors who made this project possible! 💖  
 
-<a href="https://github.com/yourusername/study-planner/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=yourusername/study-planner" alt="Contributors"/>
+<a href="https://github.com/harshit-verma-2005/study-planner/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=harshit-verma-2005/study-planner" alt="Contributors"/>
 </a>
-Instructions for Code Attachment in README
-Replace yourusername:
-Replace yourusername with your actual GitHub username in the repository link.
+
+🚀 About the Developer
+💡 Designed and developed by Harshit Verma.
+If you like this project, don't forget to star ⭐ the repository!
+
 
 Database File:
 Make sure the database.sql file is present in the root directory of your project.
