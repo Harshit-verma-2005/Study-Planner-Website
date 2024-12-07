@@ -77,7 +77,7 @@ Database Import Instructions
 ## 🛠️ Setup Instructions
 
 1. Clone the repository:
-   git clone https://github.com/harshit-verma-2005/study-planner.git
+   git clone https://github.com/harshit-verma-2005/Study-Planner-Website.git
    
 2. Import the database into MySQL:
 
@@ -88,7 +88,7 @@ Import the database.sql file located in the project root.
 3. Start your local server (e.g., XAMPP or WAMP).
 
 4. Open the project in your browser:
-     ->  http://localhost/study-planner
+     ->  http://localhost/Study-Planner-Website
 
 🌟 Example Credentials (for testing)
 Role	Username	Password
@@ -102,8 +102,8 @@ User	testuser	test123
 
 Thanks to all the contributors who made this project possible! 💖  
 
-<a href="https://github.com/harshit-verma-2005/study-planner/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=harshit-verma-2005/study-planner" alt="Contributors"/>
+<a href="https://github.com/harshit-verma-2005/Study-Planner-Website/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=harshit-verma-2005/Study-Planner-Website" alt="Contributors"/>
 </a>
 
 🚀 About the Developer
