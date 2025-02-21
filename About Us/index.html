@@ -6,6 +6,87 @@
     <title>Contact Us | Study Planner</title>
     <link rel="stylesheet" href="styles.css">
     <script defer src="script.js"></script>
+
+    <style>.about-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 50px;
+        background-color: #f9f9f9;
+        gap: 20px;
+    }
+    
+    .about-text {
+        flex: 1;
+        padding: 20px;
+        max-width: 50%;
+    }
+    
+    .about-text h2 {
+        font-size: 2.5rem;
+        color: #333;
+        margin-bottom: 20px;
+        text-align: center; /* Center align the heading */
+    }
+    
+    .about-text p {
+        font-size: 1rem;
+        line-height: 1.6;
+        color: #555;
+    }
+    
+    .about-image {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        max-width: 50%;
+    }
+    
+    .about-image img {
+        width: 100%;
+        height: auto;
+        border-radius: 15px;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .about-text h2{
+    font-size: 45px;
+    color: #1E3A8A;
+    margin-bottom: 10px;
+    text-align: center; /* Center align the heading */
+    }
+
+    .about-text p{
+        font-size: 18px;
+    }
+    .about-text ul{
+        font-size: 18px;
+    }
+    
+    /* Responsive Design */
+    @media (max-width: 768px) {
+        .about-container {
+            flex-direction: column;
+            padding: 20px;
+        }
+    
+        .about-text, .about-image {
+            max-width: 100%;
+        }
+    }
+    
+    /* Responsive Design */
+    @media (max-width: 768px) {
+        .about-container {
+            flex-direction: column;
+            padding: 20px;
+        }
+    
+        .about-text, .about-image {
+            max-width: 100%;
+        }
+    }
+    </style>
 </head>
 <body>
 
@@ -42,20 +123,25 @@
     <section class="about-container">
         <!-- Left Side - Text Content -->
         <div class="about-text">
-            <h2>About Us</h2>
-            <p>
-                Welcome to SkillEd! Our goal is to help students and professionals 
-                plan their studies efficiently. With our smart study planner, you 
-                can manage tasks, set reminders, and achieve your learning goals with ease. 
-            </p>
-            <p>
-                Join us on this journey of making learning more structured and effective!
-            </p>
+            <h2>About Us</h2><br><br>
+            <p>🎓 Welcome to SkillEd, your ultimate companion for smarter and more efficient learning! At SkillEd, we believe in effective time management and structured planning as keys to academic success. Our mission is to empower learners with a dynamic platform that simplifies study planning and enhances productivity.</p>
+           
+            <br> <p>💡 We are a passionate team of tech enthusiasts and education advocates, committed to bridging the gap between technology and education. Our platform offers powerful features like personalized dashboards, task management, smart scheduling, email reminders, quizzes, and notifications to help you stay organized and achieve your academic goals.</p>
+            <br><p>🚀 Join us on this journey to make learning more structured and effective!</p>
+            <br><p>🌟 Why choose SkillEd?</p><br>
+            <ul>
+                <li>📅 Easy-to-use study planner</li>
+                <li>🔔 Timely reminders and notifications</li>
+                <li>📊 Progress tracking and analytics</li>
+                <li>🧠 Engaging quizzes and interactive content</li>
+                <li>📚 Resources and tips for effective learning</li>
+            </ul>
+
         </div>
     
         <!-- Right Side - Image -->
         <div class="about-image">
-            <img src="about-img.jpg" alt="About Us Image">
+            <img src="../images/about-us.png" style="width: 500px;" alt="About Us Image">
         </div>
     </section>
     

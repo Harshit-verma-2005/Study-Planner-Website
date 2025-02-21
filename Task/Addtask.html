@@ -93,8 +93,8 @@
                 <h3>Schedule</h3>
                 <input type="text" id="taskInput" placeholder="Enter Task" name="task" style="width: 100%; margin-bottom: 10px;">
                 <div class="row">
-                    <input type="date" id="startDateInput" name="start_date">
-                    <input type="date" id="endDateInput" name="end_date">
+                    <!-- <input type="date" id="startDateInput" name="start_date"> -->
+                    <!-- <input type="date" id="endDateInput" name="end_date"> -->
                     <input type="time" id="startTimeInput" name="start_time">
                     <input type="time" id="endTimeInput" name="end_time">
                 </div>
@@ -159,18 +159,18 @@
 
         function addSchedule() {
             const task = document.getElementById("taskInput").value;
-            const startDate = document.getElementById("startDateInput").value;
-            const endDate = document.getElementById("endDateInput").value;
+            // const startDate = document.getElementById("startDateInput").value;
+            // const endDate = document.getElementById("endDateInput").value;
             const startTime = document.getElementById("startTimeInput").value;
             const endTime = document.getElementById("endTimeInput").value;
             const priority = document.getElementById("priorityInput").value;
 
-            if (task && startDate && endDate && startTime && endTime && priority) {
-                schedule.push({ task, startDate, endDate, startTime, endTime, priority });
+            if (task && startTime && endTime && priority) {
+                schedule.push({ task,startTime, endTime, priority });
                 updateScheduleList();
                 document.getElementById("taskInput").value = "";
-                document.getElementById("startDateInput").value = "";
-                document.getElementById("endDateInput").value = "";
+                // document.getElementById("startDateInput").value = "";
+                // document.getElementById("endDateInput").value = "";
                 document.getElementById("startTimeInput").value = "";
                 document.getElementById("endTimeInput").value = "";
                 document.getElementById("priorityInput").value = "";

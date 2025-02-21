@@ -9,9 +9,11 @@
 body {
     background-color: #f7f7f7;
     color: #333;
+    font-weight: 400;
+    
 }
 
-h/* General Styling for Header and Nav */
+/* General Styling for Header and Nav */
 header {
   background-color: #fff;
   padding: 20px;
@@ -57,12 +59,14 @@ nav ul li a {
   background-color: transparent;
   color: #007bff;
   border: 2px solid #007bff;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .auth-buttons .register {
   background-color: #007bff;
   color: #fff;
   border: 2px solid #007bff;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 /* Hide Hamburger on Larger Screens */
@@ -86,6 +90,7 @@ nav ul li a {
 
 .sign-out {
   background-color: #E94E77;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .sign-out:hover {
@@ -137,37 +142,47 @@ nav ul, .auth-buttons {
 
 
 /* Hero Section */
-.hero-section {
+ .hero-section {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 60px;
-    background-color: #e6f0ff;
-}
+    background-color: #e6f0ff; 
+ } 
+
 
 .content {
     max-width: 50%;
+    font-family: "Roboto", sans-serif;
+
 }
 
 .hero-section h2 {
     font-size: 40px;
     line-height: 1.2;
     color: #333;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
 }
 
 .hero-section h2 span {
     color: #007bff;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
 }
 
 .hero-section p {
     font-size: 18px;
     margin: 20px 0;
     color: #555;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
 }
 
 .hero-buttons {
     display: flex;
     gap: 20px;
+
 }
 
 .hero-buttons a {
@@ -175,6 +190,8 @@ nav ul, .auth-buttons {
     padding: 15px 30px;
     font-size: 18px;
     border-radius: 5px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
 }
 
 .btn-get-started {
@@ -189,11 +206,12 @@ nav ul, .auth-buttons {
 }
 
 .hero-image img {
-    width: 450px;
+    /* width: 300px; */
     height: auto;
     border-radius: 10px;
-}
+    margin-right: 70px;
 
+}
 /* Features Section */
 .features {
     display: flex;
@@ -512,10 +530,14 @@ body {
     text-align: center;
     font-size: 36px;
     margin-bottom: 30px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
   }
   
   .courses-section h2 span {
     color: #007bff;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
   }
   
   .courses-container {
@@ -632,28 +654,37 @@ body {
     font-size: 36px;
     color: #333;
     margin-bottom: 10px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
   }
   
   .id-card-info h2 span {
     color: #007bff;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
   }
   
   .id-card-info p {
     font-size: 18px;
     margin-bottom: 20px;
     color: #666;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
   }
   
   .benefits h3 {
     font-size: 22px;
     margin-bottom: 10px;
     color: #333;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
   }
   
   .benefits ul {
     list-style: none;
     padding-left: 0;
     margin-top: 40px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 
   }
   
@@ -663,12 +694,16 @@ body {
     display: flex;
     align-items: center;
     color: #333;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
   }
   
   .benefits ul li i {
     color: #007bff;
     margin-right: 10px;
     font-size: 18px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
   }
   
   .id-card-image {
@@ -747,6 +782,8 @@ body {
     text-align: center;
     padding: 40px;
     background-color: #f9f9f9;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
 }
 
 .testimonial-slider {
@@ -754,6 +791,7 @@ body {
     max-width: 800px;
     margin: 0 auto;
     overflow: hidden;
+    
 }
 
 .testimonial-track {
@@ -769,6 +807,8 @@ body {
     background-color: #fff;
     border-radius: 8px;
     margin: 10px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
 }
 
 .user-img {
@@ -997,6 +1037,7 @@ nav ul, .auth-buttons {
   color: #333;
   font-size: 1.5rem;
   margin-bottom: 0.5rem;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .review .box p {
@@ -1004,6 +1045,7 @@ nav ul, .auth-buttons {
   font-size: 1rem;
   padding: 0.5rem 0;
   line-height: 1.4;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .review .box .stars i {
@@ -1018,4 +1060,18 @@ nav ul, .auth-buttons {
 
 #signInBtn, #registerBtn, #signOutBtn {
   display: none;
+}
+
+.review h1 span {
+  color: #007bff;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+.review h1 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #333;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
 }
