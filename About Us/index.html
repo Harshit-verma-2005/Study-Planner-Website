@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Study Planner</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">SkillEd</div>
+        <div class="menu">Services ▼</div>
+    </nav>
+
+    <!-- Contact Section -->
+    <section class="contact-container">
+        <div class="contact-info">
+            <h3>CONTACT ME</h3>
+            <h1>How can I help you?</h1>
+            <p>Fill in the form or drop an email 📩</p>
+            <div class="contact-details">
+                <p>📞 +91 9219234077</p>
+                <p>📧 <a href="mailto:email@website.com">harshitverma6145@gmail.com</a></p>
+            </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-form">
+            <form id="contactForm">
+                <input type="text" id="name" placeholder="Name" required>
+                <input type="email" id="email" placeholder="Email" required>
+                <input type="text" id="subject" placeholder="Subject" required>
+                <textarea id="message" placeholder="Message" rows="4" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <section class="about-container">
+        <!-- Left Side - Text Content -->
+        <div class="about-text">
+            <h2>About Us</h2>
+            <p>
+                Welcome to SkillEd! Our goal is to help students and professionals 
+                plan their studies efficiently. With our smart study planner, you 
+                can manage tasks, set reminders, and achieve your learning goals with ease. 
+            </p>
+            <p>
+                Join us on this journey of making learning more structured and effective!
+            </p>
+        </div>
+    
+        <!-- Right Side - Image -->
+        <div class="about-image">
+            <img src="about-img.jpg" alt="About Us Image">
+        </div>
+    </section>
+    
+
+
+<script>
+    document.getElementById("contactForm").addEventListener("submit", function(event) {
+    event.preventDefault(); // Prevents form from refreshing the page
+
+    let name = document.getElementById("name").value.trim();
+    let email = document.getElementById("email").value.trim();
+    let subject = document.getElementById("subject").value.trim();
+    let message = document.getElementById("message").value.trim();
+
+    if (name === "" || email === "" || subject === "" || message === "") {
+        alert("Please fill in all fields!");
+        return;
+    }
+
+    if (!validateEmail(email)) {
+        alert("Please enter a valid email address!");
+        return;
+    }
+
+    alert("Thank you! Your message has been sent successfully.");
+    document.getElementById("contactForm").reset();
+});
+
+// Email Validation Function
+function validateEmail(email) {
+    let re = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+    return re.test(email);
+}
+
+</script>
+</body>
+</html>

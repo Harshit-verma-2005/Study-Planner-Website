@@ -7,9 +7,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $schedule = json_decode($_POST['schedule'], true); // Array of schedule entries
     $goals = $_POST['goals']; // Goals
     $notes = $_POST['notes']; // Notes
+    $email = $_POST['email']; // Email of the user
 
     // Prepare the statement to insert each task into the tasks table
-    $stmt = $conn->prepare("INSERT INTO tasks (subject, tasks, start_time, end_time, priority, goals, notes) VALUES (?, ?, ?, ?, ?, ?, ?)");
+    $stmt = $conn->prepare("INSERT INTO tasks (subject, tasks, start_time, end_time, priority, goals, notes, email) VALUES (?, ?, ?, ?, ?, ?, ?, ?)");
 
     // Ensure we only add one task per subject by iterating up to the length of subjects or schedule, whichever is smaller
     $count = min(count($subjects), count($schedule));
@@ -17,14 +18,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     for ($i = 0; $i < $count; $i++) {
         // Bind parameters for each task entry
         $stmt->bind_param(
-            "sssssss",
+            "ssssssss",
             $subjects[$i],            // Subject name
             $schedule[$i]['task'],    // Task description
             $schedule[$i]['startTime'], // Start time
             $schedule[$i]['endTime'],   // End time
             $schedule[$i]['priority'],  // Priority
             $goals,                   // Study goals (same for all tasks)
-            $notes                    // Notes (same for all tasks)
+            $notes,                   // Notes (same for all tasks)
+            $email                    // Email of the user
         );
 
         // Execute the prepared statement

@@ -60,6 +60,17 @@
         .add-btn:hover, .add-task-btn:hover {
             background-color: #357abd;
         }
+
+        .email{
+            padding:5px
+        }
+
+        .test{
+            padding: 10px;
+            width: 48%;
+            font-size: 16px;
+            border-radius: 8px;
+        }
     </style>
 </head>
 <body>
@@ -111,7 +122,10 @@
                 <h3>Important Notes</h3>
                 <textarea id="notes" name="notes" placeholder="Add any important notes..."></textarea>
             </div>
-
+            <div class="email">
+                <h3>Add email for reminders </h3>
+                <input id="email" class="test" name="email" placeholder="Email..">
+            </div>
             <!-- Save Task Button -->
             <button type="submit" class="add-task-btn">Save Task</button>
         </form>
